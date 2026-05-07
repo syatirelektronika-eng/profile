@@ -1,0 +1,177 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADALAH POKOKNYA</title>
+
+  <!-- Hubungkan CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background Glow -->
+  <div class="glow1"></div>
+  <div class="glow2"></div>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">ABU BAKAR</div>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+
+    <p class="top-text">ABU BAKAR WEB</p>
+
+    <h1>
+      Build Amazing
+      <span>Animated</span>
+      Websites
+    </h1>
+
+    <p class="desc">
+      Kelas dengan mantan narapidana,
+      stok premium, dan sales profesional.
+    </p>
+
+    <div class="buttons">
+
+      <a href="#projects">
+        <button class="btn-primary">
+          Get Started
+        </button>
+      </a>
+
+      <a href="#about">
+        <button class="btn-secondary">
+          Explore More
+        </button>
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- About -->
+  <section class="content-section" id="about">
+
+    <h2>About</h2>
+
+    <p>
+      ABU BAKAR adalah kelas dengan mantan narapidana,
+      stok premium, dan sales yang interaktif.
+    </p>
+
+  </section>
+
+  <!-- Projects -->
+  <section class="content-section" id="projects">
+
+    <h2>Projects</h2>
+
+    <div class="cards">
+
+     <a
+ <href="https://drive.google.com/file/d/1paPQ2pV7EjlIAw5qKHgAOMWIReYSpKNM/view?usp=drivesdk">
+target="_blank"
+      class="card-link"
+    >
+      <div class="card" onclick="showPhoto()">
+        <div class="icon">😛</div>
+        <h3>Nguwawor</h3>
+        <p>Klik untuk melihat foto.</p>
+      </div>
+
+      <!-- INSTAGRAM -->
+      <a href="https://instagram.com/syatir1440p" target="_blank" class="card-link">
+        <div class="card">
+          <div class="icon">💦</div>
+          <h3>Ige </h3>
+          <p>Klik untuk menuju Instagram.</p>
+        </div>
+      </a>
+
+      <!-- TIKTOK -->
+      <a href="https://tiktok.com/@orang_hytam3" target="_blank" class="card-link">
+        <div class="card">
+          <div class="icon">🚀</div>
+          <h3>Interactive Effects</h3>
+          <p>Klik untuk menuju TikTok.</p>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- FOTO POPUP -->
+    <div class="popup" id="photoPopup">
+
+      <span class="close" onclick="closePhoto()">
+        ✖
+      </span>
+
+      <img src="foto-kamu.jpg" alt="Foto Saya">
+
+    </div>
+
+  </section>
+
+  <!-- Contact -->
+  <section class="content-section" id="contact">
+
+    <h2>Contact</h2>
+
+    <p>
+      Klik kontak di bawah untuk langsung menuju WhatsApp atau Instagram.
+    </p>
+
+    <div class="contact-info">
+
+      <!-- WhatsApp -->
+      <a
+        href="https://wa.me/6289612991261"
+        target="_blank"
+        class="contact-card"
+      >
+        <h3>📞 WhatsApp</h3>
+        <p>+62 896-1299-1261</p>
+      </a>
+
+      <!-- Instagram -->
+      <a
+        href="https://instagram.com/syatir1440p"
+        target="_blank"
+        class="contact-card"
+      >
+        <h3>📸 Instagram</h3>
+        <p>@syatir1440p</p>
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- JavaScript -->
+  <script>
+
+    function showPhoto(){
+      document.getElementById("photoPopup").style.display = "flex";
+    }
+
+    function closePhoto(){
+      document.getElementById("photoPopup").style.display = "none";
+    }
+
+  </script>
+
+</body>
+  </html>
